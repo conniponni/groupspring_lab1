@@ -3,13 +3,15 @@ package se.iths.groupspring.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import se.iths.groupspring.model.Review;
 
 import java.util.List;
 
 @Controller
+@RequestMapping("/review")
 public class ReviewController {
-    @GetMapping("/review")
+    @GetMapping
     public String reviewList(Model model) {
         List<Review> reviews = List.of(
                 new Review(1L, 5, "Toppen!"),
