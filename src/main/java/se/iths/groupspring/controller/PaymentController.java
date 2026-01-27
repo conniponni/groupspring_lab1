@@ -3,14 +3,16 @@ package se.iths.groupspring.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import se.iths.groupspring.model.Payment;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Controller
+@RequestMapping("/payment")
 public class PaymentController {
-    @GetMapping("/payment")
+    @GetMapping
     public String paymentList(Model model) {
         List<Payment> payments = List.of(
                 new Payment(1L, 200, "Swish", LocalDate.of(2025, 5, 10)),
