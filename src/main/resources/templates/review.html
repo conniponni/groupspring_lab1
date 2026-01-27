@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Recensioner</title>
+</head>
+<body>
+<ul>
+    <li th:each="review : ${reviews}">
+        <span th:text="${review.id}">Id</span> -
+        <span th:text="${review.rating}">Betyg</span> -
+        <span th:text="${review.comment}">Kommentar</span>
+    </li>
+</ul>
+</body>
+</html>
