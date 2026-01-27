@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Adresses</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Adresses</h1>
+<ul>
+    <li th:each="adress : ${adresses}">
+        <td th:text="${adress.streetName}"></td>
+        <td th:text="${adress.houseNumber}"></td>
+        <td th:text="${adress.postalCode}"></td>
+        <td th:text="${adress.city}"></td>
+    </li>
+</ul>
+</body>
+</html>
