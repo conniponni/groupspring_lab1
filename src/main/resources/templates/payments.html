@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Betalningar</title>
+</head>
+<body>
+<h1>Betalningar</h1>
+<ul>
+    <li th:each="payment : ${payments}">
+        <span th:text="${payment.id}">Id</span> -
+        <span th:text="${payment.amount}">Summa</span> -
+        <span th:text="${payment.method}">Metod</span> -
+        <span th:text="${payment.paymentDate}">Datum</span>
+    </li>
+</ul>
+</body>
+</html>
