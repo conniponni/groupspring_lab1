@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>OrderItems</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>OrderItems</h1>
+<ul>
+    <li th:each="orderItem : ${orderItems}" th:text="${orderItem}">OrderItem</li>
+</ul>
+</body>
+</html>
