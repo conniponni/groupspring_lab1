@@ -7,8 +7,10 @@
 <body>
 <h1>Category</h1>
 <ul>
-    <li th:each="category : ${categories}"><strong th:text="${category.name}"></strong>
-        <span th:text="' – ' + ${category.description}"></span>
+    <li th:each="category : ${categories}">
+        <td th:text="${category.id}"></td>
+        <td th:text="${category.name}"></td>
+        <td th:text="${category.description}"></td>
     </li>
 </ul>
 </body>
