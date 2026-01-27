@@ -4,11 +4,12 @@
     <title>Personer</title>
 </head>
 <body>
+<h1>Personer</h1>
 <ul>
     <li th:each="person : ${persons}">
         <span th:text="${person.id}">Id</span> -
-        <span th:text="${person.firstname}">Förnamn</span> -
-        <span th:text="${person.lastname}">Efternamn</span>
+        <span th:text="${person.firstName}">Förnamn</span> -
+        <span th:text="${person.lastName}">Efternamn</span>
     </li>
 </ul>
 </body>
