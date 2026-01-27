@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
 
-    @GetMapping("/products")
+    @GetMapping
     public String getProducts(Model model) {
 
         List<Product> products = new ArrayList<>();
